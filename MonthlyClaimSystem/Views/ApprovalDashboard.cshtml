@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Approval Dashboard";
+}
+
+<h2 class="mb-4"><i class="fas fa-clipboard-check me-2"></i>Approval Dashboard</h2>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="card-title mb-0">Claims Pending Approval</h5>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search claims...">
+                    <select class="form-select" style="max-width: 200px;">
+                        <option value="">All Statuses</option>
+                        <option value="submitted">Submitted</option>
+                        <option value="coordinator_approved">Approved by Coordinator</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Claim ID</th>
+                        <th>Lecturer</th>
+                        <th>Month/Year</th>
+                        <th>Total Hours</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Submitted</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CLM-003</td>
+                        <td>Dr. Johnson</td>
+                        <td>March 2024</td>
+                        <td>38</td>
+                        <td>R7,600</td>
+                        <td><span class="badge bg-info">Submitted</span></td>
+                        <td>2024-03-05</td>
+                        <td>
+                            <a asp-controller="Claim" asp-action="ReviewClaim" asp-route-id="3" class="btn btn-sm btn-primary">
+                                Review
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CLM-004</td>
+                        <td>Prof. Williams</td>
+                        <td>February 2024</td>
+                        <td>42</td>
+                        <td>R8,400</td>
+                        <td><span class="badge bg-success">Approved by Coordinator</span></td>
+                        <td>2024-02-28</td>
+                        <td>
+                            <a asp-controller="Claim" asp-action="ReviewClaim" asp-route-id="4" class="btn btn-sm btn-primary">
+                                Review
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

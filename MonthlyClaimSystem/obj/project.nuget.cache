@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eoaz+1erqRc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\MonthlyClaimSystem\\MonthlyClaimSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\bootstrap\\5.3.8\\bootstrap.5.3.8.nupkg.sha512",
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\font.awesome\\5.15.4\\font.awesome.5.15.4.nupkg.sha512"
+  ],
+  "logs": []
+}
